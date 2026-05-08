@@ -1,0 +1,14 @@
+config/database.php
+storage/logs/*.log
+storage/uploads/*
+!storage/uploads/.gitkeep
+!storage/logs/.gitkeep
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+.env*
+vendor/
+.idea/
+.vscode/

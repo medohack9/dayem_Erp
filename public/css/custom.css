@@ -1,0 +1,70 @@
+/* Custom CSS overrides for Dayem ERP */
+
+/* RTL scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* RTL-specific adjustments */
+[dir="rtl"] ::-webkit-scrollbar-thumb {
+    direction: rtl;
+}
+
+/* Print styles */
+@media print {
+    nav,
+    header {
+        display: none !important;
+    }
+
+    main {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        font-size: 12pt;
+    }
+}
+
+/* Brand color overrides */
+.text-brand-primary {
+    color: #F4C400;
+}
+
+.text-brand-dark {
+    color: #111111;
+}
+
+.bg-brand-primary {
+    background-color: #F4C400;
+}
+
+.bg-brand-dark {
+    background-color: #111111;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #F4C400;
+    outline-offset: 2px;
+}

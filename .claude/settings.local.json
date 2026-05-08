@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash:*)",
+      "Bash(SPECIFY_FEATURE=001-core-system-foundation bash:*)"
+    ]
+  }
+}
